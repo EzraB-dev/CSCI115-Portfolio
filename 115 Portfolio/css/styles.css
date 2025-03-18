@@ -1,0 +1,16 @@
+body {background-color: maroon;font-family: 'Courier New', Courier, monospace;}
+
+.name-container {position: relative;width: 100%;height: 200px;margin-bottom: 100px;}
+
+/* hover animation for name comented out because I thought it was too distracting */
+/* .name-container:hover .nametitle {filter: invert(1);} */
+
+.nametitle {text-align: center;font-size: 100px;font-weight: bolder;transition: all 0.3s ease;}
+
+.jp-text {position: absolute;font-size: 40px;left: 80px;top: 0px;}
+
+.en-text {position: absolute;color: white;font-size: 35px;left: 70px;top: 15px;z-index: 10;}
+
+a:visited{color: white;}
+
+a:hover{color:  black}

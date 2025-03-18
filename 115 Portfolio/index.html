@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ezra || Portfolio</title>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+    .nav-container {display: flex;flex-direction: column;align-items: center;margin-left: 500px;margin-top: 80px;}
+
+    .nav-button {position: relative;width: 400px;height: 70px;margin: 15px 0;cursor: pointer;transition: all 0.3s ease;}
+
+    /* inverting animation found from stack overflow https://www.w3schools.com/cssref/func_invert.php */
+    .nav-button:hover .button-text {filter: invert(1);}
+
+    .button-text {font-weight: bold;transition: all 0.3s ease;}
+</style>
+</head>
+<body>
+    <!-- Header -->
+<div class="name-container">
+    <div class="nametitle" style="position: fixed; left: 350px; top: 40px; font-family: 'Courier New', Courier, monospace; font-size: 103px;">
+     エズラブレインガン
+    </div>
+    <div class="nametitle" style="color: white; position: relative; z-index: 20;">
+     EZRA BREINGAN
+    </div>
+</div>
+
+<div class="nav-container">
+    <!-- ABOUT Button -->
+    <div class="nav-button" onclick="window.location.href='about.html'">
+        <div class="button-text jp-text">について</div>
+        <div class="button-text en-text">ABOUT</div>
+    </div>
+    
+    <!-- GALLERY Button -->
+    <div class="nav-button" onclick="window.location.href='gallery.html'">
+        <div class="button-text jp-text">ギャラリー</div>
+        <div class="button-text en-text">GALLERY</div>
+    </div>
+    
+    <!-- RECOMMENDATIONS Button -->
+    <div class="nav-button" onclick="window.location.href='recommendations.html'">
+        <div class="button-text jp-text">おすすめ</div>
+        <div class="button-text en-text">RECOMMENDATIONS</div>
+    </div>
+    
+    <!-- EXTRA Button -->
+    <div class="nav-button" onclick="window.location.href='extra.html'">
+        <div class="button-text jp-text">エクストラ</div>
+        <div class="button-text en-text">EXTRA</div>
+    </div>
+    
+</div>
+</body>
+</html>
