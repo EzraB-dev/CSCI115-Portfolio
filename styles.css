@@ -11,6 +11,11 @@ body {background-color: maroon;font-family: 'Courier New', Courier, monospace;}
 
 .en-text {position: absolute;color: white;font-size: 35px;left: 70px;top: 15px;z-index: 10;}
 
+a{text-decoration: none;}
+
+a:active{color: white;}
+
 a:visited{color: white;}
 
 a:hover{color:  black}
+
