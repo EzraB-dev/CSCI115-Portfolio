@@ -7,13 +7,19 @@
 <link rel="stylesheet" href="styles.css">
 <style>
     .nav-container {display: flex;flex-direction: column;align-items: center;margin-left: 500px;margin-top: 80px;}
-
-    .nav-button {position: relative;width: 400px;height: 70px;margin: 15px 0;cursor: pointer;transition: all 0.3s ease;}
-
-    /* inverting animation found from stack overflow https://www.w3schools.com/cssref/func_invert.php */
+    .nav-button {position: relative;width: 400px;height: 70px;margin: 15px 0;cursor: pointer;transition: all 0.3s ease; display: flex;align-items: center;justify-content: center;}
+    /* so the links invert color on hover */
     .nav-button:hover .button-text {filter: invert(1);}
+    .button-text {font-weight: bold;transition: all 0.3s ease; text-align: center;}
 
-    .button-text {font-weight: bold;transition: all 0.3s ease;}
+    /* Styles for the preview container */
+    .preview-container {position: absolute;right: 105%;top: 50%;transform: translateY(-50%);display: none;pointer-events: none;background-color: rgba(255, 255, 255, 0.9);padding: 5px;border-radius: 5px;box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+
+    /* Style for the preview image itself */
+    .preview-image {width: 150px;height: auto;display: block;border-radius: 3px;}
+
+    /* Show preview on hover */
+    .nav-button:hover .preview-container {display: block;}
 </style>
 </head>
 <body>
@@ -30,28 +36,47 @@
 <div class="nav-container">
     <!-- ABOUT Button -->
     <div class="nav-button" onclick="window.location.href='about.html'">
-        <div class="button-text jp-text">について</div>
-        <div class="button-text en-text">ABOUT</div>
+        <div class="preview-container">
+            <img src="img/about.png" alt="About Preview" class="preview-image">
+        </div>
+        <div>
+            <div class="button-text jp-text">について</div>
+            <div class="button-text en-text">ABOUT</div>
+        </div>
     </div>
-    
+
     <!-- GALLERY Button -->
     <div class="nav-button" onclick="window.location.href='gallery.html'">
-        <div class="button-text jp-text">ギャラリー</div>
-        <div class="button-text en-text">GALLERY</div>
+        <div class="preview-container">
+            <img src="img/gallery.png" alt="Gallery Preview" class="preview-image">
+        </div>
+        <div>
+            <div class="button-text jp-text">ギャラリー</div>
+            <div class="button-text en-text">GALLERY</div>
+        </div>
     </div>
-    
+
     <!-- RECOMMENDATIONS Button -->
     <div class="nav-button" onclick="window.location.href='recommendations.html'">
-        <div class="button-text jp-text">おすすめ</div>
-        <div class="button-text en-text">RECOMMENDATIONS</div>
+        <div class="preview-container">
+            <img src="img/recommendations.png" alt="Recommendations Preview" class="preview-image">
+        </div>
+        <div>
+            <div class="button-text jp-text">おすすめ</div>
+            <div class="button-text en-text">RECOMMENDATIONS</div>
+        </div>
     </div>
-    
+
     <!-- EXTRA Button -->
     <div class="nav-button" onclick="window.location.href='extra.html'">
-        <div class="button-text jp-text">エクストラ</div>
-        <div class="button-text en-text">EXTRA</div>
+        <div class="preview-container">
+            <img src="img/extra.png" alt="Extra Preview" class="preview-image">
+        </div>
+        <div>
+            <div class="button-text jp-text">エクストラ</div>
+            <div class="button-text en-text">EXTRA</div>
+        </div>
     </div>
-    
 </div>
 </body>
 </html>
