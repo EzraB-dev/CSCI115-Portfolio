@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supa dupa cool web forms</title>
+</head>
+<body>
+    <!-- webform -->
+    <form method="post" action="process.php">
+        <!-- field set -->
+        <fieldset>
+             <!-- caption / title for field set -->
+            <legend>Introduce Yourself</legend>
+                <!-- text input -->
+                <form method="post" action="process.php">
+                    First Name: <input type="text" size="20" name="firstname"> <br>
+                    Last Name: <input type="text" size="30" name="lastname"> <br>
+                </form>
+
+                <br>
+                <!-- radio buttons -->
+                <form method="post" action="process.php">
+                    Eye Color:<br>
+                    <input type="radio" name="eye" value="brown">Brown<br>
+                    <input type="radio" name="eye" value="blue">Blue<br>
+                    <input type="radio" name="eye" value="green">Green<br>
+                    <input type="radio" name="eye" value="other">Other<br>
+                </form>
+
+                <!-- checkbox -->
+                <form method="post" action="process.php">
+                    My Pets:<br>
+                    <input type="checkbox" name="pets" value="dog"> Dog <br>
+                    <input type="checkbox" name="pets" value="cat"> Cat <br>
+                    <input type="checkbox" name="pets" value="Hamster"> Hamster <br>
+                    <input type="checkbox" name="pets" value="Fish"> Fish <br>
+                </form>
+
+                <br>
+
+                <!-- drop down selection -->
+                <form method="post" action="process.php">
+                    Foreign Languages Spoken:<br />
+                    <select name="language">
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="arabic">Arabic</option>
+                    </select>
+                </form>
+
+                <br>
+
+                <!-- text area -->
+                <form method="post" action="process.php">
+                    Tell us some more about yourself: <br>
+                    <textarea name="super cool text box name" rows="8" cols="20">
+                    </textarea><br>
+                    <input type="submit" value="All Good!">
+                </form>
+
+                <br>
+
+        </fieldset>
+    </form>
+</body>
+</html>

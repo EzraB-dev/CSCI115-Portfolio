@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box1{height: 100px;width: 100px;background-color: green;}
+
+    .box2{height: 100px;width: 100px;background-color: blue;position: sticky;top: 0px;left: 0px;}
+
+    .box3{height: 100px;width: 100px;background-color: orange;}
+
+    .box4{height: 100px;width: 100px;background-color: pink;position: fixed;bottom: 100px; left: 500px;}
+
+    /* relative moves the box relative to its normal position */
+    .box5{height: 150px;width: 150px;background-color: red;position: relative;left: 200px;}
+
+    .box6{height: 100px;width: 100px;background-color: purple;position: absolute;}
+
+    .box7{height: 150px;width: 150px;border: 1px solid black;position: absolute;top: 329px; left: 7px;}
+    </style>
+</head>
+<!-- allows scrolling by making the body longer -->
+<body style="height: 10000px;">
+
+    <div class="box1">static box</div>
+    <div class="box2"><h1>sticky box</h1></div>
+    <div class="box3">static box</div>
+    <div class="box4"><h1>fixed box</h1></div>
+    <div class="box5">relative box <br> original positon is: 200px left</div>
+    <div class="box6">absolute box</div>
+    <div class="box7">ghost of relative box</div>
+
+</body>
+</html>
