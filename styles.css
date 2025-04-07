@@ -29,10 +29,6 @@ body {background-color: maroon;font-family: 'Courier New', Courier, monospace;fo
 
 .en-text {color: white;font-size: 30px;position: relative;z-index: 10;display: block;margin-top: -10px;line-height: 1;}
 
-/* preview styles */
-.preview-container {display: none;position: absolute;right: 105%;top: 50%;transform: translateY(-50%);pointer-events: none;background-color: rgba(255, 255, 255, 0.9);padding: 5px;border-radius: 5px;box-shadow: 0 2px 5px rgba(0,0,0,0.2);z-index: 20;}
-.preview-image {width: 150px;height: auto;display: block;border-radius: 3px;}
-
 /* show preview on hover only on non-touch devices larger screens */
 @media (hover: hover) and (min-width: 1024px) {
     .nav-button:hover .preview-container {
