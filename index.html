@@ -6,74 +6,61 @@
 <title>Ezra || Portfolio</title>
 <link rel="stylesheet" href="styles.css">
 <style>
-    .nav-container {display: flex;flex-direction: column;align-items: center;margin-left: 500px;margin-top: 80px;}
-    .nav-button {position: relative;width: 400px;height: 70px;margin: 15px 0;cursor: pointer;transition: all 0.3s ease; display: flex;align-items: center;justify-content: center;}
-    /* so the links invert color on hover */
-    .nav-button:hover .button-text {filter: invert(1);}
-    
-    .button-text {font-weight: bold;transition: all 0.3s ease; text-align: center;}
+    .nav-container {margin-top: 0;}
+    /* keeping body style here if preferred */
+    body {background-color: maroon;}
 
-    /* Styles for the preview container */
-    .preview-container {position: absolute;right: 105%;top: 50%;transform: translateY(-50%);display: none;pointer-events: none;background-color: rgba(255, 255, 255, 0.9);padding: 5px;border-radius: 5px;box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
-
-    /* Style for the preview image itself */
-    .preview-image {width: 150px;height: auto;display: block;border-radius: 3px;}
-
-    /* Show preview on hover */
-    .nav-button:hover .preview-container {display: block;}
 </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- header - Using new CSS classes -->
 <div class="name-container">
-    <div class="nametitle" style="position: fixed; left: 350px; top: 40px; font-family: 'Courier New', Courier, monospace; font-size: 103px;">
-     エズラブレインガン
-    </div>
-    <div class="nametitle" style="color: white; position: relative; z-index: 20;">
-     EZRA BREINGAN
-    </div>
+    <div class="nametitle-jp">エズラブレインガン</div>
+    <div class="nametitle-en">EZRA BREINGAN</div>
 </div>
 
+<!-- navigation -->
 <div class="nav-container">
-    <!-- ABOUT Button -->
+    <!-- ABOUT button -->
     <div class="nav-button" onclick="window.location.href='about.html'">
         <div class="preview-container">
             <img src="img/about.png" alt="About Preview" class="preview-image">
         </div>
-        <div>
+        <!-- Use container for text layout -->
+        <div class="button-text-container">
             <div class="button-text jp-text">について</div>
             <div class="button-text en-text">ABOUT</div>
         </div>
     </div>
 
-    <!-- GALLERY Button -->
+    <!-- GALLERY button -->
     <div class="nav-button" onclick="window.location.href='gallery.html'">
         <div class="preview-container">
             <img src="img/gallery.png" alt="Gallery Preview" class="preview-image">
         </div>
-        <div>
+        <div class="button-text-container">
             <div class="button-text jp-text">ギャラリー</div>
             <div class="button-text en-text">GALLERY</div>
         </div>
     </div>
 
-    <!-- RECOMMENDATIONS Button -->
+    <!-- RECOMMENDATIONS button -->
     <div class="nav-button" onclick="window.location.href='recommendations.html'">
         <div class="preview-container">
             <img src="img/recommendations.png" alt="Recommendations Preview" class="preview-image">
         </div>
-        <div>
+        <div class="button-text-container">
             <div class="button-text jp-text">おすすめ</div>
             <div class="button-text en-text">RECOMMENDATIONS</div>
         </div>
     </div>
 
-    <!-- EXTRA Button -->
+    <!-- EXTRA button -->
     <div class="nav-button" onclick="window.location.href='extra.html'">
         <div class="preview-container">
             <img src="img/extra.png" alt="Extra Preview" class="preview-image">
         </div>
-        <div>
+         <div class="button-text-container">
             <div class="button-text jp-text">エクストラ</div>
             <div class="button-text en-text">EXTRA</div>
         </div>

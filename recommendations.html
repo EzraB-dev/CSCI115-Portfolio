@@ -7,64 +7,75 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body{background-color: #008b90;}
-        img{width: 150px; height: 200px;border-radius: 10px;}
+
+        /* image styles moved to styles.css .recommendations-category img */
+        /* img{width: 150px; height: 200px;border-radius: 10px;} */
+
+        .recommendations-category { font-family: 'Courier New', Courier, monospace; }
     </style>
 </head>
 <body>
-    <div style="position: absolute;height: 100px; z-index: 11;">
-        <!-- text decoration none style to remove underscore from link -->
-        <a href="index.html" style="font-size: 60px; font-weight: bold;"><-</a>
+    <!-- back link -->
+    <div class="back-link-container">
+        <a href="index.html"><-</a>
     </div>
 
+    <!-- header -->
     <div class="name-container">
-        <!-- downsized to match recomendations -->
-        <div class="nametitle" style="position: absolute; left: 400px; top: 30px; font-family: 'Courier New', Courier, monospace; font-size: 93px; z-index: 9;">
-            おすすめ
-        </div>
-        <!-- slightly downsized because its a long word  -->
-        <div class="nametitle" style="color: white; position: relative; z-index: 10; font-size: 80px;">
-            RECOMMENDATIONS
-        </div>
+        <div class="nametitle-jp">おすすめ</div>
+        <div class="nametitle-en" style="font-size: calc(30px + 4.5vw);">RECOMMENDATIONS</div>
     </div>
-    <center>
-        <div style="border: solid black; width: 800px; height: 2400px;font-family: 'Courier New', Courier, monospace;">
-            <h1>GAMES -  ゲーム</h1>
-            <div style="width: 600px; height: 500px;font-family: 'Courier New', Courier, monospace;">
-                <a href="https://www.minecraft.net/en-us" target="_blank"><img src="img/game1.jpg" alt="minecraft"></a>
-                <a href="https://store.steampowered.com/app/400/Portal/" target="_blank"><img src="img/game2.jpg" alt="Portal"></a>
-                <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" target="_blank"><img src="img/game3.jpg" alt="Lethal Company"></a>
-                <a href="https://beatsaber.com/" target="_blank"><img src="img/game4.jpg" alt="Beat Saber"></a>
-                <a href="https://animalcrossing.nintendo.com/new-horizons/" target="_blank"><img src="img/game5.jpg" alt="Animal Crossing"></a>
-                <a href="https://store.steampowered.com/app/1509960/PICO_PARK/" target="_blank"><img src="img/game6.jpg" alt="pico park"></a>
+
+    <!-- content wrapper -->
+    <div class="content-wrapper">
+            <div class="recommendations-category">
+                <h1>GAMES - ゲーム</h1>
+                <div>
+                    <a href="https://www.minecraft.net/en-us" target="_blank"><img src="img/game1.jpg" alt="minecraft"></a>
+                    <a href="https://store.steampowered.com/app/400/Portal/" target="_blank"><img src="img/game2.jpg" alt="Portal"></a>
+                    <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" target="_blank"><img src="img/game3.jpg" alt="Lethal Company"></a>
+                    <a href="https://beatsaber.com/" target="_blank"><img src="img/game4.jpg" alt="Beat Saber"></a>
+                    <a href="https://animalcrossing.nintendo.com/new-horizons/" target="_blank"><img src="img/game5.jpg" alt="Animal Crossing"></a>
+                    <a href="https://store.steampowered.com/app/1509960/PICO_PARK/" target="_blank"><img src="img/game6.jpg" alt="pico park"></a>
+                </div>
             </div>
-            <h1>MOVIES - えいが</h1>
-            <div style="width: 600px; height: 500px;font-family: 'Courier New', Courier, monospace;">
-                <a href="https://www.youtube.com/watch?v=0vxOhd4qlnA" target="_blank"><img src="img/movie1.jpg" alt="Interstellar"></a>
-                <a href="https://www.youtube.com/watch?v=2SRizeR4MmU" target="_blank"><img src="img/movie2.jpg" alt="Enders Game"></a>
-                <a href="https://www.youtube.com/watch?v=zTvJJnoWIPk" target="_blank"><img src="img/movie3.jpg" alt="Baby Driver"></a>
-                <a href="https://www.youtube.com/watch?v=alIq_wG9FNk" target="_blank"><img src="img/movie4.jpg" alt="Wall-E"></a>
-                <a href="https://www.youtube.com/watch?v=dzdpqRGA1qc" target="_blank"><img src="img/movie5.jpg" alt="Home Alone"></a>
-                <a href="https://www.youtube.com/watch?v=hNCmb-4oXJA" target="_blank"><img src="img/movie6.jpg" alt="Us"></a>
+
+            <div class="recommendations-category">
+                <h1>MOVIES - えいが</h1>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=0vxOhd4qlnA" target="_blank"><img src="img/movie1.jpg" alt="Interstellar"></a>
+                    <a href="https://www.youtube.com/watch?v=2SRizeR4MmU" target="_blank"><img src="img/movie2.jpg" alt="Enders Game"></a>
+                    <a href="https://www.youtube.com/watch?v=zTvJJnoWIPk" target="_blank"><img src="img/movie3.jpg" alt="Baby Driver"></a>
+                    <a href="https://www.youtube.com/watch?v=alIq_wG9FNk" target="_blank"><img src="img/movie4.jpg" alt="Wall-E"></a>
+                    <a href="https://www.youtube.com/watch?v=dzdpqRGA1qc" target="_blank"><img src="img/movie5.jpg" alt="Home Alone"></a>
+                    <a href="https://www.youtube.com/watch?v=hNCmb-4oXJA" target="_blank"><img src="img/movie6.jpg" alt="Us"></a>
+                </div>
             </div>
-            <h1>SHOWS - ショー</h1>
-            <div style="width: 600px; height: 500px;font-family: 'Courier New', Courier, monospace;">
-                <a href="https://www.youtube.com/watch?v=8BPlx6eK1vc" target="_blank"><img src="img/show1.jpg" alt="The Rookie"></a>
-                <a href="https://www.youtube.com/watch?v=HhesaQXLuRY" target="_blank"><img src="img/show2.jpg" alt="Breaking Bad"></a>
-                <a href="https://www.youtube.com/watch?v=oqxAJKy0ii4" target="_blank"><img src="img/show3.jpg" alt="Squid Game"></a>
-                <a href="https://www.youtube.com/watch?v=b9EkMc79ZSU" target="_blank"><img src="img/show4.jpg" alt="Stranger Things"></a>
-                <a href="https://www.youtube.com/watch?v=-C2z-nshFts" target="_blank"><img src="img/show5.jpg" alt="The Office"></a>
-                <a href="https://www.youtube.com/watch?v=rCj-Fb1OmXg" target="_blank"><img src="img/show6.jpg" alt="The Big Bang Theory"></a>
+
+            <div class="recommendations-category">
+                <h1>SHOWS - ショー</h1>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=8BPlx6eK1vc" target="_blank"><img src="img/show1.jpg" alt="The Rookie"></a>
+                    <a href="https://www.youtube.com/watch?v=HhesaQXLuRY" target="_blank"><img src="img/show2.jpg" alt="Breaking Bad"></a>
+                    <a href="https://www.youtube.com/watch?v=oqxAJKy0ii4" target="_blank"><img src="img/show3.jpg" alt="Squid Game"></a>
+                    <a href="https://www.youtube.com/watch?v=b9EkMc79ZSU" target="_blank"><img src="img/show4.jpg" alt="Stranger Things"></a>
+                    <a href="https://www.youtube.com/watch?v=-C2z-nshFts" target="_blank"><img src="img/show5.jpg" alt="The Office"></a>
+                    <a href="https://www.youtube.com/watch?v=rCj-Fb1OmXg" target="_blank"><img src="img/show6.jpg" alt="The Big Bang Theory"></a>
+                </div>
             </div>
-            <h1>ANIME - アニメ</h1>
-            <div style="width: 600px; height: 500px;font-family: 'Courier New', Courier, monospace;">
-                <a href="https://www.youtube.com/watch?v=wkRR2VUsWfU" target="_blank"><img src="img/anime1.jpg" alt="Look Back"></a>
-                <a href="https://www.youtube.com/watch?v=VQGCKyvzIM4" target="_blank"><img src="img/anime2.jpg" alt="Demon Slayer"></a>
-                <a href="https://www.youtube.com/watch?v=NlJZ-YgAt-c" target="_blank"><img src="img/anime3.jpg" alt="Death Note"></a>
-                <a href="https://www.youtube.com/watch?v=a94NcwNgPdo" target="_blank"><img src="img/anime4.jpg" alt="Hajime no Ippo"></a>
-                <a href="https://www.youtube.com/watch?v=DwmxEAWjTQQ" target="_blank"><img src="img/anime5.jpg" alt="Erased"></a>
-                <a href="https://www.youtube.com/watch?v=LrNvF8gcJPM" target="_blank"><img src="img/anime6.jpg" alt="Solo Leveling"></a>
+
+            <div class="recommendations-category">
+                 <h1>ANIME - アニメ</h1>
+                 <div>
+                    <a href="https://www.youtube.com/watch?v=wkRR2VUsWfU" target="_blank"><img src="img/anime1.jpg" alt="Look Back"></a>
+                    <a href="https://www.youtube.com/watch?v=VQGCKyvzIM4" target="_blank"><img src="img/anime2.jpg" alt="Demon Slayer"></a>
+                    <a href="https://www.youtube.com/watch?v=NlJZ-YgAt-c" target="_blank"><img src="img/anime3.jpg" alt="Death Note"></a>
+                    <a href="https://www.youtube.com/watch?v=a94NcwNgPdo" target="_blank"><img src="img/anime4.jpg" alt="Hajime no Ippo"></a>
+                    <a href="https://www.youtube.com/watch?v=DwmxEAWjTQQ" target="_blank"><img src="img/anime5.jpg" alt="Erased"></a>
+                    <a href="https://www.youtube.com/watch?v=LrNvF8gcJPM" target="_blank"><img src="img/anime6.jpg" alt="Solo Leveling"></a>
+                </div>
             </div>
-        </div>
-    </center>
+    </div>
+
 </body>
 </html>
